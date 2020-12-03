@@ -1,0 +1,511 @@
+@charset "utf-8";
+
+/*webfont*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
+html {
+	font-size: 16px; /*1rem*/
+}
+body {
+	color: #06104B;
+	font-family: 'Roboto', 'Noto+Sans+KR', sans-serif;
+}
+* {
+	box-sizing: border-box; /*꼭 넣어야 width에 padding이 안더해짐*/
+}
+a {
+	color: #06104B;
+}
+button {
+	padding: 0;
+}
+input[type="search"]:focus {
+	outline: none;
+}
+select:focus {
+	outline: none;
+}
+textarea:focus {
+	outline: none;
+}
+input::placeholder {
+	padding-left: 10px;
+	color: #222;
+}
+textarea:focus {
+	outline: none;
+}
+select { /*select box 화살표 없애기*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none; 
+}
+select::-ms-expand {
+  display: none;
+}
+.container {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+/*topmenu*/
+.topmenu1 {
+	height: 64px;
+	background: #3CBFEF;
+}
+.topmenu1 .top_top {
+	display: flex;
+	justify-content: space-between;
+}
+h1 {
+	display: inline-block;
+	margin-top: 17px;
+	width: 46px;
+	height: 29px;
+	background: url(../images/exexMWL_W.svg) no-repeat left top;
+	background-size: 46px 29px;
+	font-size: 0;
+	vertical-align: top;
+}
+.top_search {
+	display: inline-block;
+	margin-top: 16px;
+	margin-left: 24px;
+}
+.top_m1Left form {
+	position: relative;	
+}
+.top_m1Left form input {
+	width: 300px;
+	height: 32px;
+	border: 1px solid #FFFFFF;
+	border-radius: 20px;
+	background: #fff;
+	vertical-align: top;
+}
+.top_m1Left form button {
+	position: absolute;
+	top: 0px;
+	right: 8px;
+}
+.top_m1Right ul li{
+	display: inline-block
+}
+.top_m1Right {
+	margin-top: 8px;
+}
+
+
+/*main*/
+h2 {
+	padding-top: 48px;
+	font-size: 2rem;
+	text-align: center;
+	color: #242424;
+}
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+form select {
+	margin-top: 32px;
+	padding: 0 20px;
+	width: 82.96875%;
+	height: 60px;
+	border: 1px solid #E7E8E9;
+	background: url(../images/selectbox_arrow.svg) no-repeat center right 14px;
+	font-size: 1rem;
+}
+.write_main {
+	padding: 20px;
+	margin-top: 24px;
+	width: 82.96875%;
+	border: 1px solid #E7E8E9;
+}
+#write_title {
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-bottom: 1px solid #E7E8E9;
+	font-family: 'Roboto', 'Noto+Sans+KR', sans-serif;
+	font-size: 1rem;
+	resize: none;
+}
+#write_contents {
+	padding-top: 20px;
+	width: 100%;
+	min-height: 480px;
+	border: none;
+	font-family: 'Roboto', 'Noto+Sans+KR', sans-serif;
+	font-size: 1rem;
+	resize: none;
+}
+.write_btn {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 16px;
+	margin-bottom: 40px;
+	width: 100%;
+}
+.write_btn button {
+	display: inline-block;
+	width: 106px;
+	height: 40px;
+	border: 2px solid #2680EB;
+	border-radius: 10px;
+	font-size: 0.875rem;
+	font-weight: 500;
+	text-align: center;
+}
+.write_btn .cancle {
+	margin-right: 16px;
+	color: #2680EB;
+}
+.write_btn .subm {
+	background: #2680EB;
+	color: #fff;
+}
+
+
+
+/*footer*/
+footer {
+	background: #929398;
+	color: #FFF;
+	padding-bottom: 40px;
+}
+.ft_logo {
+	float: left;
+	margin-top: 30px;
+	margin-right: 36px;
+	width: 46px;
+	height: 29px;
+	background: url(../images/exexMWL_W.svg) no-repeat left top;
+	background-size: 46px 29px;
+	font-size: 0;
+}
+.ft_mwl {
+	float: left;
+	margin-top: 34px;
+	font-size: 0.8125rem;
+}
+.ft_mwl div {
+	padding-top: 20px;
+}
+.ft_mwl div span {
+	padding-right: 20px;
+}
+.ft_mwl div span:nth-child(2):before,
+.ft_mwl div span:nth-child(3):before {
+	content: "|";
+	padding-right: 20px;
+}
+.footer_down {
+	float: right;
+}
+.footer_down li {
+	float: left;
+	display: inline-block;
+}
+.footer_down:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+footer>.container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.footer_down li:nth-child(1) {
+	margin-right: 32px;
+}
+.footer_down li a>img {
+	text-align: center;
+}
+.ft_d {
+	position: relative;
+	margin-top: 30px;
+	width: 189px;
+	height: 39px;
+	border: 1px solid #fff;
+	border-radius: 6px;
+	background: #fff;
+	color: #06104B;
+	z-index: 0;
+}
+.ft_d img {
+	position: absolute;
+	top: 8px;
+	left: 10px;
+}
+.ft_d p {
+	margin-top: 12px;
+	margin-left: 34px;
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+.ft_d span {
+	margin-left: 9px;
+	font-weight: 400;
+}
+
+
+/*!!!!!!!!!반응형!!!!!!!!!!!!!!!!!!*/
+/*1024-1440 size*/
+@media screen and (min-width: 1024px) and (max-width:1300px) {
+	.container {
+		padding: 0 20px;
+	}
+}
+
+
+/*769-1023 size*/
+@media screen and (min-width: 769px) and (max-width:1023px) {
+	.container {
+		padding: 0 18px;
+	}
+	/*topmenu*/
+	.topmenu1 {
+		height: 56px;
+		background: #3CBFEF;
+	}
+	h1 {
+		margin-top: 13px;
+	}
+	.top_search {
+		margin-top: 12px;
+		margin-left: 20px;
+	}
+	.top_m1Right {
+		margin-top: 4px;
+	}
+	
+	/*footer*/
+	.footer_down li:nth-child(1) {
+		margin-right: 20px;
+	}
+	.ft_d {
+		width: 140px;
+	}
+	.ft_d img {
+		left: 20px;
+	}
+	.ft_d p {
+		margin-top: 12px;
+		margin-left: 28px;
+		text-align: center;
+	}
+	.ft_d p span {
+		display: none;
+	}
+}
+
+/*768- */
+@media screen and (max-width:768px) {
+	.container {
+		padding: 0 16px;
+	}
+	/*topmenu*/
+	.topmenu1 {
+		height: 56px;
+		background: #3CBFEF;
+	}
+	h1 {
+		margin-top: 13px;
+	}
+	.top_m1Left form input {
+		display: none;
+	}
+	.top_search {
+		margin-top: 12px;
+		margin-left: 20px;
+	}
+	.top_m1Left form {
+		position: static;	
+	}
+	.top_m1Left form button {
+		top: 3px;
+		right: 170px;
+		width: 48px;
+		height: 48px;
+		background: url(../images/select_btn_search.svg) no-repeat left top;
+		background-size: 32px 32px;
+		background-position: 50% 50%;
+	}
+	.top_m1Left form button img {
+		opacity: 0;
+	}
+	.top_m1Right {
+		margin-top: 4px;
+	}
+	h2 {
+    padding-top: 20px;
+    font-size: 1.5rem;
+	}
+	form select {
+		margin-top: 20px;
+		padding: 0 10px;
+		height: 50px;
+		width: 100%;
+		background: url(../images/selectbox_arrow.svg) no-repeat center right 4px;
+		font-size: 0.875rem;
+	}
+	.write_main {
+		padding: 16px 0;
+		margin-top: 16px;
+		width: 100%;
+	}
+	#write_title {
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 0.875rem;
+	}
+	#write_contents {
+		padding-top: 16px;
+		padding-left: 10px;
+		padding-right: 10px;
+		min-height: 300px;
+		font-size: 0.875rem;
+	}
+}
+
+@media screen and (min-width: 521px) and (max-width:768px) {
+		
+	/*footer*/
+	footer .container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.ft_left_wrap {
+		width: 70%;
+	}
+	.ft_logo {
+		float: none;
+		display: none;
+	}
+	.ft_mwl {
+		float: none;
+		margin-top: 0;
+		padding-top: 30px;
+		font-size: 0.8125rem;
+	}
+	.ft_mwl p {
+		font-size: 1rem;
+	}
+	.ft_mwl div {
+		padding-top: 16px;
+	}
+	.ft_mwl div span {
+		padding-right: 10px;
+	}
+	.ft_mwl div span:nth-child(2):before,
+	.ft_mwl div span:nth-child(3):before {
+		padding-right: 10px;
+	}
+	.footer_down { /*!! 물어보기 왜 가운데 정렬이 될까요? 못찾겠어요ㅠㅠ*/
+		float: none;
+		margin-top: 30px;
+	}
+	.footer_down li {
+		float: none;
+		display: block;
+	}
+	.footer_down li:nth-child(1) {
+		margin-right: 0;
+		padding-bottom: 16px;
+	}
+	.ft_d {
+		position: relative;
+		margin-top: 0;
+		width: 140px;
+		height: 44px;
+	}
+	.ft_d img {
+		top: 10px;
+		left: 20px;
+	}
+	.ft_d p {
+		margin-top: 14px;
+		margin-left: 28px;
+		text-align: center;
+	}
+	.ft_d p span {
+		display: none;
+	}
+}
+
+/*520 - */
+@media screen and (max-width:520px) {
+	/*footer*/
+	footer .container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.ft_left_wrap {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.ft_logo {
+		float: none;
+		display: none;
+	}
+	.ft_mwl {
+		float: none;
+		margin-top: 0;
+		padding-top: 30px;
+		letter-spacing: -0.8px;
+		font-size: 0.8125rem;
+	}
+	.ft_mwl p {
+		font-size: 1rem;
+	}
+	.ft_mwl div {
+		padding-top: 16px;
+	}
+	.ft_mwl div span {
+		padding-right: 10px;
+	}
+	.ft_mwl div span:nth-child(2):before,
+	.ft_mwl div span:nth-child(3):before {
+		padding-right: 10px;
+	}
+	.footer_down {
+		float: none;
+		width: 100%;
+		margin-top: 20px;
+	}
+	.footer_down li {
+		float: none;
+		display: block;
+	}
+	.footer_down li:nth-child(1) {
+		margin-right: 0;
+		padding-bottom: 10px;
+	}
+	.ft_d {
+		position: relative;
+		margin-top: 0;
+		margin: 0 auto;
+		width: 140px;
+		height: 44px;
+	}
+	.ft_d img {
+		top: 10px;
+		left: 20px;
+	}
+	.ft_d p {
+		margin-top: 14px;
+		margin-left: 28px;
+		text-align: center;
+	}
+	.ft_d p span {
+		display: none;
+	}
+}

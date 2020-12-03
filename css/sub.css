@@ -1,0 +1,617 @@
+@charset "utf-8";
+
+/*webfont*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
+
+html {
+	font-size: 16px; /*1rem*/
+}
+body {
+	color: #06104B;
+	font-family: 'Roboto', 'Noto+Sans+KR', sans-serif;
+}
+* {
+	box-sizing: border-box; /*꼭 넣어야 width에 padding이 안더해짐*/
+}
+a {
+	color: #06104B;
+}
+input[type="checkbox"] {
+	position: relative;
+	top: 1.5px
+}
+input[type="text"]:focus {
+	outline: none;
+}
+input[type="password"]:focus {
+	outline: none;
+}
+input[type="tel"]:focus {
+	outline: none;
+}
+select:focus {
+	outline: none;
+}
+input[type="button"]:focus {
+	outline: none;
+}
+input[placeholder] {
+	padding-left: 8px;
+	font-size: 0.875rem;
+}
+input::placeholder {
+	color: #C8C8C8
+}
+select { /*select box 화살표 없애기*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+	background: url(../images/selectbox_arrow.svg) no-repeat center right 4px, #fff;
+	background-size: 20px 20px;
+	font-size: 0.875rem;
+}
+select::-ms-expand {
+  display: none;
+}
+/*join*/
+#join {
+	background: #F8F8F8;
+}
+.container {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+#join>.container {
+	padding: 120px 0 0;	
+	background: url(../images/join_hi.svg) no-repeat left top;
+	background-size: 327px;
+	background-position: 100% 12%;
+}
+h1 {
+	width: 74px;
+	height: 47px;
+	background: url(../images/exexMWL.svg) no-repeat left top;
+	background-size: 74px 47px;
+	font-size: 0;
+}
+.join_head h2 {
+	margin-top: 28px;
+	font-size: 2.813rem;
+	color: #222222;
+}
+.join_head h2>br {
+	display: none;
+}
+#join select {
+	padding-left: 8px;
+}
+.join_form {
+	margin-top: 30px;
+	border-top: 4px solid #07134A;
+	padding-top: 30px;
+	background: #fff;
+}
+.join_form form{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 600px;
+	background: #fff;
+}
+.join_form .join_desc1 {
+	padding-top: 25px;
+	width: 50%;
+	height: 450px;
+	border-right: 2px solid #EAEAEA;
+	font-size: 0.875rem;
+	color: #505050;
+}
+.desc1_wrap {
+	margin: 0 auto;
+	width: 68.184%;
+}
+.desc1_wrap p:nth-child(1) input {
+	width: 15px;
+	height: 15px;
+}
+.desc1_wrap p:nth-child(2) input,
+.desc1_wrap p:nth-child(4) input{
+	margin-top: 50px;
+	width: 15px;
+	height: 15px;
+}
+.desc1_wrap p textarea {
+	margin-top: 16px;
+	width: 100%;
+	height: 100px;
+	background: #F7F7F7;
+	border: 1px solid #E7E8E9;
+}
+.join_desc2 {
+	padding-top: 21px;
+	margin: 0 auto;
+	width: 50%;
+	color: #343434;
+	text-align: center;
+}
+.desc2_wrap {
+	margin: 0 auto;
+	width: 67.97%;
+}
+.desc2_wrap p {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 18px;
+	font-size: 0.875rem;
+	color: #343434;
+}
+.desc2_wrap input {
+	border: 1px solid #E7E8E9;
+}
+.input1 {
+	width: 73.30124367776773%;
+	height: 30px;
+}
+.input_a span {
+	width: 73.30124367776773%;
+	white-space: nowrap;
+}
+.input1_plusbtn {
+	border: 1px solid #E7E8E9;
+}
+.input1.plusbtn  {
+	width: 77.47019734864928%;
+}
+.input1.plusbtn1 {
+	width: 70.12388553110495%;
+}
+.desc2_wrap select {
+  width: 73.30124367776773%;
+	height: 30px;
+	border: 1px solid #E7E8E9;
+}
+.inp_btn {
+	padding: 0;
+	width: 21.37108892376532%;
+	height: 30px;
+	font-size: 0.75rem;
+	text-align: center;
+	color: #929398;
+}
+.inp_btn2 {
+	padding: 0;
+	width: 28.71740074130965%;
+	height: 30px;
+	font-size: 0.75rem;
+	text-align: center;
+	color: #929398;
+}
+.join_submit {
+	width: 100%;
+	text-align: center;
+}
+.submit1 button {
+	padding: 8px 40px;
+	border: 1px solid #07134A;
+	border-radius: 4px;
+	background: #07134A;
+	text-align: center;
+	font-size: 1.125rem;
+	font-weight: 500;
+	color: #fff;
+}
+
+/*footer*/
+footer {
+	padding: 35px 0 60px;
+	text-align: center;
+}
+#join_footer {
+	background: #F8F8F8;
+}
+footer div a {
+	font-size: 0.8125rem;
+	color: #ACACAC;
+}
+footer div a:nth-child(1),
+footer div a:nth-child(2) {
+	margin-right: 10px;
+}
+footer div a:nth-child(1):after,
+footer div a:nth-child(2):after {
+	margin-left: 10px;
+	content: "|";
+}
+
+
+/*log-in*/
+#log_in select {
+	padding-left: 5px;
+	background: url(../images/selectbox_arrow.svg) no-repeat center right 1px, #fff;
+	background-size: 20px 20px;
+	border: 1px solid #E7E8E9;
+}
+#log_in {
+	background: #F0FAFF;
+}
+.container {
+	padding: 180px 0 0;
+}
+#log_in h1 {
+	margin: 0 auto;
+}
+#log_in h2 {
+	margin-top: 18px;
+	font-size: 2.5rem;
+	line-height: 1.5;
+	text-align: center;
+	font-weight: 300;
+	color: #222222;
+}
+#log_in h2 span {
+	font-weight: 400;
+}
+.login_form {
+	margin: 0 auto;
+	padding-top: 60px;
+	text-align: center;
+}
+.login_form p {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	padding-bottom: 18px;
+	width: 278px;
+}
+.login_form p:nth-child(3) {
+	padding-bottom: 0;
+}
+.login_select {
+	display: inline-block;
+}
+.login_select select {
+	width: 200px;
+	height: 30px;
+	padding-left: 2px;
+}
+.login_form form p>input {
+	width: 200px;
+	height: 30px;
+	border: 1px solid #E7E8E9;
+}
+.login_form form p input[placeholder] {
+	padding-left: 5px;
+}
+.login_submit button{
+	margin-top: 40px;
+	width: 278px;
+	border-radius: 4px;
+}
+.login_add {
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 140px;
+	text-align: center;
+}
+.login_add a {
+	color: #929398;
+	font-size: 0.875rem;
+}
+.login_add a:nth-child(1){
+	margin-right: 10px;
+}
+.login_add a:nth-child(1):after{
+	margin-left: 10px;
+	content: "|";
+}
+
+#login_footer {
+	background: #F0FAFF
+}
+
+/*반응형*/
+/*1024-1440 size*/
+@media screen and (min-width: 1024px) and (max-width:1300px) {
+	/*join*/
+	#join>.container {
+		padding: 120px 20px 0;
+	}
+}
+
+/*769-1023 size*/
+@media screen and (min-width: 769px) and (max-width:1023px) {
+	/*join*/
+	#join>.container {
+		padding: 120px 18px 0;
+		background-size: 280px;
+		background-position: 97% 14%;
+		}
+	.join_head>h2 {
+		margin-top: 26px;
+		font-size: 2.25rem;
+	}
+	.desc1_wrap {
+		width: 90%;
+	}
+	.desc2_wrap {
+		width: 90%;
+	}
+	.inp_btn {
+		font-size: 0.75rem;
+		letter-spacing: -1px;
+	}
+	.inp_btn2 {
+		font-size: 0.75rem;
+		letter-spacing: -1px;
+	}
+
+}
+
+/*521-769 size*/
+@media screen and (min-width: 521px) and (max-width:769px) {
+	/*join*/
+	.join_desc2 {
+		padding-top: 20px;
+		width: 100%;
+	}
+	.desc2_wrap {
+		width: 76.767%;
+	}
+	.desc2_wrap p {
+		display: flex;
+		margin-bottom: 8px;
+		font-size: 1rem;
+	}
+	.desc2_wrap p:last-child {
+		margin-bottom: 0;
+	}
+	.desc2_wrap p label {
+		display: inline-block;
+	}
+	.input1 {
+		width: 73.30124367776773%;
+		height: 48px;
+	}
+	.input_a span {
+		width: 73.30124367776773%;
+		white-space: nowrap;
+	}
+	.input1.plusbtn  {
+		width: 77.47019734864928%;
+	}
+	.input1.plusbtn1 {
+		width: 70.12388553110495%;
+	}
+	.desc2_wrap select {
+		width: 73.30124367776773%;
+		height: 48px;
+	}
+	.desc2_select>span {
+		display: inline-block;
+	}
+	.inp_btn {
+		width: 21.37108892376532%;
+		padding: 0;
+		height: 48px;
+	}
+	.inp_btn2 {
+		width: 28.71740074130965%;
+		padding: 0;
+		height: 48px;
+	}
+	.submit1 button {
+		margin-top: 32px;
+		width: 76.767%;
+		height: 50px;
+		padding: 8px 0;
+		border-radius: 4px;
+		font-size: 1.125rem;
+	}
+	
+	/*log_in*/
+	#log_in>.login_s>.container {
+		padding: 80px 16px 0;
+	}
+	#log_in h2 {
+		margin-top: 12px;
+		font-size: 1.75rem;
+		letter-spacing: -1.8px;
+		line-height: 1.5;
+	}
+	.login_form {
+		padding-top: 40px;
+	}
+	.login_form p {
+		display: flex;
+		padding-bottom: 10px;
+		width: 76.767%;
+	}
+	.login_form p label,
+	.login_select span{
+		display: inline-block;
+	}
+	.login_select select {
+		width: 77.47019734864928%;
+		height: 48px;
+	}
+	.login_form form p>input {
+		width: 77.47019734864928%;
+		height: 48px;
+	}
+	.submit1 button {
+		margin-top: 30px; 
+	}
+}
+
+/*769 이하*/
+@media screen and (max-width: 769px) {
+	/*join*/
+	input[type="checkbox"] {
+		position: relative;
+		top: 4px;
+	}
+	#join>.container {
+		padding: 80px 16px 0;	
+		background: none;
+	}
+	.join_head h1 {
+		margin: 0 auto;
+		width: 74px;
+		height: 47px;
+		background: url(../images/exexMWL.svg) no-repeat left top;
+		background-size: 74px 47px;
+		font-size: 0;
+	}
+	.join_head h2 {
+		margin-top: 16px;
+		font-size: 1.75rem;
+		line-height: 1.6;
+		letter-spacing: -0.5px;
+		font-weight: 500;
+		text-align: center;
+	}
+	.join_head h2>br {
+		display: block;
+	}
+	.join_form {
+		margin-top: 0;
+		border-top: none;
+		padding-top: 0;
+	}
+	.join_form form{
+		display: block;
+		width: 100%;
+		height: auto;
+		background: #F8F8F8;
+	}
+	.join_form .join_desc1 {
+		padding-top: 28px;
+		width: 100%;
+		height: auto;
+		border-right: none;
+		text-align: center;
+	}
+	.desc1_wrap {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.desc1_wrap p:nth-child(1) input {
+		width: 20px;
+		height: 20px;
+	}
+	.desc1_wrap p:nth-child(2),
+	.desc1_wrap p:nth-child(4) {
+		display: none;
+	}
+	.desc1_wrap p textarea {
+		display: none;
+	}
+	.login_add {
+		padding-top: 20px;
+	}
+		
+}
+
+/*520 이하*/
+@media screen and (max-width: 520px) {
+
+	/*join*/
+	.join_desc2 {
+		padding-top: 20px;
+		width: 100%;
+	}
+	.desc2_wrap {
+		width: 100%;
+	}
+	.desc2_wrap p {
+		display: block;
+		margin-bottom: 8px;
+	}
+	.desc2_wrap p:last-child {
+		margin-bottom: 0;
+	}
+	.desc2_wrap p label {
+		display: none;
+	}
+	.input1 {
+		width: 100%;
+		height: 48px;
+	}
+	.input_a span {
+		width: 100%;
+		white-space: nowrap;
+	}
+	.input1.plusbtn  {
+		width: 77.47019734864928%;
+	}
+	.input1.plusbtn1 {
+		width: 70.12388553110495%;
+	}
+	.desc2_wrap select {
+		width: 100%;
+		height: 48px;
+	}
+	.desc2_select>span {
+		display: none;
+	}
+	.inp_btn {
+		width: 21.37108892376532%;
+		padding: 0;
+		height: 48px;
+	}
+	.inp_btn2 {
+		width: 28.71740074130965%;
+		padding: 0;
+		height: 48px;
+	}
+	.submit1 button {
+		margin-top: 32px;
+		width: 100%;
+		height: 50px;
+		padding: 8px 0;
+		border-radius: 4px;
+		font-size: 1.125rem;
+	}
+	
+	/*log_in*/
+	#log_in>.login_s>.container {
+		padding: 80px 16px 0;
+	}
+	#log_in h2 {
+		margin-top: 12px;
+		font-size: 1.75rem;
+		letter-spacing: -1.8px;
+		line-height: 1.5;
+	}
+	.login_form {
+		padding-top: 40px;
+	}
+	.login_form p {
+		display: block;
+		padding-bottom: 10px;
+		width: 100%;
+	}
+	.login_form p label,
+	.login_select span{
+		display: none;
+	}
+	.login_select select {
+		width: 100%;
+		height: 48px;
+	}
+	.login_form form p>input {
+		width: 100%;
+		height: 48px;
+	}
+	.submit1 button {
+		margin-top: 30px; 
+	}
+	.login_add {
+		padding-top: 20px;
+	}
+
+}

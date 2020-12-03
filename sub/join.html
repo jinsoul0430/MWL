@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>sol portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--기본-->
+	<meta name="keywords" content="병원, 방사선사, 간호사, 물리치료사, 병원이야기, 의료종사자, 의료진, 의료이야기, 학교이야기, 회사이야기, 치위생사">
+	<meta name="description" content="의료종사자들의 다양한 이야기">
+	<meta name="author" content="이진솔">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+	<link href="../css/reset.css" rel="stylesheet">
+	<link href="../css/sub.css" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<section id="join">
+		<div class="container">
+			<div class="join_head">
+				<h1>MWL</h1>
+				<h2>즐거운 이야기 공간으로 <br>당신을 초대합니다.</h2>
+				<div class="hi">
+				</div>			
+			</div>	
+			<div class="join_form">
+				<form action="" method="">
+					<div class="join_desc1">
+						<div class="desc1_wrap">
+							<p>
+								<input type="checkbox" id="allAgree" name="" >
+								<label for="allAgree">MWL (필수) 약관에 모두 동의합니다.</label>
+							</p>
+							<p>
+								<input type="checkbox" id="agree" name="" required>
+								<label for="agree">(필수) 이용약관</label>
+							</p>
+							<p>
+								<textarea name="" cols="60" rows="5">
+								</textarea>
+							</p>
+							<p>
+								<input type="checkbox" id="agree1" name="" required>
+								<label for="agree1">(필수) 개인정보 수집 및 이용 동의</label>
+							</p>
+							<p>
+								<textarea name="" cols="60" rows="5">
+								</textarea>
+							</p>
+						</div>
+					</div>
+					<div class="join_desc2">
+						<div class="desc2_wrap">
+							<p>
+								<label for="username">이름</label>
+								<input type="text" id="username" placeholder="이름을 입력하세요" class="input1" autofocus required>
+							</p>
+							<p>
+								<label for="userbirth">생년월일</label>
+								<input class="input1" type="text" id="userbirth" placeholder="19850101" autofocus required>
+							</p>
+							<p class="desc2_select">
+								<span>면허종류</span>
+								<select id="LicenseType">
+									<option value="" disabled selected>면허종류선택</option>
+									<option value="간호사">간호사</option>
+									<option value="물리치료사">물리치료사</option>
+									<option value="방사선사">방사선사</option>
+									<option value="약사">약사</option>
+									<option value="임상병리사">임상병리사</option>
+									<option value="의사">의사</option>
+									<option value="작업치료사">작업치료사</option>
+									<option value="치위생사">치위생사</option>
+								</select>
+							</p>
+							<p class="input_a">
+								<label for="LicenseNum">면허번호</label>
+								<span class="dubble_input">
+									<input class="input1 plusbtn" type="text" id="LicenseNum" placeholder="면허번호를 입력하세요." autofocus required>
+									<input class="inp_btn" type="button" value="인증하기">
+								</span>
+							</p>
+							<p class="input_a">
+								<label for="userTel">전화번호</label>
+								<span class="dubble_input2">
+									<input class="input1 plusbtn1" type="tel" id="userTel" placeholder="01012341234" autofocus required>
+									<input class="inp_btn2" type="button" value="인증번호받기">
+								</span>
+							</p>
+							<p>
+								<label for="telCe">인증번호</label>
+								<input class="input1" type="text" id="telCe" placeholder="인증번호를 입력하세요." autofocus required>
+							</p>
+							<p>
+								<label for="userpw">비밀번호</label>
+								<input class="input1" type="password" id="userpw" placeholder="비밀번호를 입력해주세요" autofocus required>
+							</p>
+							<p>
+								<label for="userpw2">비밀번호확인</label>
+								<input class="input1" type="password" id="userpw2" placeholder="비밀번호를 한번 더 입력해주세요" autofocus required>
+							</p>
+							<p class="input_a">
+								<label for="usernickname">닉네임</label>
+								<span class="dubble_input">
+									<input class="input1 plusbtn" type="text" id="usernickname" placeholder="닉네임을 입력하세요." autofocus required>
+									<input class="inp_btn" type="button" value="중복확인">
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="submit1 join_submit">
+						<button type="submit" class="subm">
+						승인하기
+						</button>
+					</div>
+				</form>
+			</div>		
+		</div>
+	</section>
+	
+	<footer id="join_footer">
+		<div>
+			<a href="#">이용약관</a>
+			<a href="#">개인정보처리방침</a>
+			<a href="#">법적고지</a>
+		</div>
+	</footer>
+</body>
+</html>
